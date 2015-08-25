@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<trade>
+ <id>27570013</id>
+ <description>My custom message</description>
+ <status>1</status>
+
+ <returnURL>http://localhost/success</returnURL>
+ <returnMAC/>
+ <cancelURL>http://localhost/cancel</cancelURL>
+ <cancelMAC>233769558319C7ABAABF76B48CC45D60</cancelMAC>
+ <rejectURL>http://localhost/rejected</rejectURL>
+ <delayedURL>http://localhost/delayed</delayedURL>
+ <delayedMAC>4A3C1B2F78D9CF2149E7255AF90FC5C7</delayedMAC>
+ <stamp>ccxla1440745426899</stamp>
+ <version>0001</version>
+ <reference>12345</reference>
+ <language>FI</language>
+ <content>1</content>
+ <deliveryDate>20150904</deliveryDate>
+ <firstname>Tero</firstname>
+ <familyname>Testaaja</familyname>
+ <address>Mystreet 1</address>
+ <postcode>12345</postcode>
+ <postoffice>Tampere</postoffice>
+ <country>FIN</country>
+ <device>10</device>
+ <type>0</type>
+ <algorithm>2</algorithm>
+ <paymentURL>https://payment.checkout.fi/p/27570013/7E601C90-F02485E2-252E2319-DD1FB4CC</paymentURL>
+
+ <merchant>
+  <id>375917</id>
+  <company>Testi Oy</company>
+  <name>Markkinointinimi</name>
+  <email>testi@checkout.fi</email>
+  <address>Testikuja 1&#13;
+12345 Testilä</address>
+  <vatId>123456-7</vatId>
+  <helpdeskNumber>012-345 678</helpdeskNumber>
+ </merchant>
+ <payments>
+  
+  <payment>
+   <id>28090883</id>
+   <amount>1490</amount>
+   <stamp>ccxla1440745426899</stamp>
+
+   <banks>
+ 
+    
+     
+    <nordea url="https://epmt.nordea.fi/cgi-bin/SOLOPM01" icon="https://payment.checkout.fi/static/img/nordea-text.png" name="Nordea">
+    <SOLOPMT_VERSION>0003</SOLOPMT_VERSION>
+     <SOLOPMT_RCV_ID>12345678</SOLOPMT_RCV_ID>
+     <SOLOPMT_CUR>EUR</SOLOPMT_CUR>
+     <SOLOPMT_LANGUAGE>1</SOLOPMT_LANGUAGE>
+     <SOLOPMT_RCV_ACCOUNT/>
+     <SOLOPMT_REJECT>https://payment.checkout.fi/eZRQRnJ0Qr/fi/reject</SOLOPMT_REJECT>
+     <SOLOPMT_CONFIRM>YES</SOLOPMT_CONFIRM>
+     <SOLOPMT_CANCEL>https://payment.checkout.fi/eZRQRnJ0Qr/fi/back</SOLOPMT_CANCEL>
+     <SOLOPMT_RCV_NAME>Checkout Oy</SOLOPMT_RCV_NAME>
+     <SOLOPMT_DATE>EXPRESS</SOLOPMT_DATE>
+     <SOLOPMT_AMOUNT>14.90</SOLOPMT_AMOUNT>
+     <SOLOPMT_REF>280908838</SOLOPMT_REF>
+     <SOLOPMT_MSG>Testi Henkilö</SOLOPMT_MSG>
+     <SOLOPMT_MAC>032C4511A84FA6D0E885242B03D2F7A8</SOLOPMT_MAC>
+     <SOLOPMT_STAMP>27570013</SOLOPMT_STAMP>
+     <SOLOPMT_RETURN>https://payment.checkout.fi/eZRQRnJ0Qr/fi/confirm</SOLOPMT_RETURN>
+     <SOLOPMT_KEYVERS>0001</SOLOPMT_KEYVERS>
+     
+</nordea>
+
+    
+    
+     
+    <osuuspankki url="https://kultaraha.op.fi/cgi-bin/krcgi" icon="https://payment.checkout.fi/static/img/osuuspankki.png" name="Osuuspankki">
+     <VALUUTTALAJI>EUR</VALUUTTALAJI>
+     <VIITE>280908838</VIITE>
+     <MAKSUTUNNUS>27570013</MAKSUTUNNUS>
+     <action_id>701</action_id>
+     <MYYJA>Esittelymyyja</MYYJA>
+     <SUMMA>14.90</SUMMA>
+     <VIESTI>Testi Henkilö</VIESTI>
+     <TARKISTE>AFA65FC366CE8A0ADD7367525E9F4013</TARKISTE>
+     <PALUU-LINKKI>https://payment.checkout.fi/eZRQRnJ0Qr/fi/confirm</PALUU-LINKKI>
+     <VERSIO>1</VERSIO>
+     <TARKISTE-VERSIO>1</TARKISTE-VERSIO>
+     <VAHVISTUS>K</VAHVISTUS>
+     <PERUUTUS-LINKKI>https://payment.checkout.fi/eZRQRnJ0Qr/fi/back</PERUUTUS-LINKKI>
+    </osuuspankki>
+    
+
+    
+ 
+    
+
+
+     
+    <saastopankki url="https://verkkomaksu.saastopankki.fi/vm/login.html" icon="https://payment.checkout.fi/static/img/Spmaksunappi.png" name="Säästöpankki">
+     <NET_VERSION>003</NET_VERSION>
+     <NET_SELLER_ID>0021966066003</NET_SELLER_ID>
+     <NET_CUR>EUR</NET_CUR>
+     <NET_REJECT>https://payment.checkout.fi/eZRQRnJ0Qr/fi/reject</NET_REJECT>
+     <NET_CONFIRM>YES</NET_CONFIRM>
+     <NET_CANCEL>https://payment.checkout.fi/eZRQRnJ0Qr/fi/back</NET_CANCEL>
+     <NET_DATE>EXPRESS</NET_DATE>
+     <NET_AMOUNT>14,90</NET_AMOUNT>
+     <NET_REF>280908838</NET_REF>
+     <NET_MSG>Testi Henkilö</NET_MSG>
+     <NET_MAC>65F8ED9D92C5B4B636E1744C29BF5DCF7AB55AE1117D0E20E19677B2A00D10B7</NET_MAC>
+     <NET_STAMP>27570013</NET_STAMP>
+     <NET_RETURN>https://payment.checkout.fi/eZRQRnJ0Qr/fi/confirm</NET_RETURN>
+     <NET_ALG>03</NET_ALG>
+</saastopankki>
+    
+
+
+    
+     
+    <poppankki url="https://verkkomaksu.poppankki.fi/vm/login.html" icon="https://payment.checkout.fi/static/img/POPmaksunappi.png" name="POP-Pankki">
+     <NET_VERSION>003</NET_VERSION>
+     <NET_SELLER_ID>0000000000</NET_SELLER_ID>
+     <NET_CUR>EUR</NET_CUR>
+     <NET_REJECT>https://payment.checkout.fi/eZRQRnJ0Qr/fi/reject</NET_REJECT>
+     <NET_CONFIRM>YES</NET_CONFIRM>
+     <NET_CANCEL>https://payment.checkout.fi/eZRQRnJ0Qr/fi/back</NET_CANCEL>
+     <NET_DATE>EXPRESS</NET_DATE>
+     <NET_AMOUNT>14,90</NET_AMOUNT>
+     <NET_REF>280908838</NET_REF>
+     <NET_MSG>Testi Henkilö</NET_MSG>
+     <NET_MAC>B16F105E06E58A87660EE50B02ACB6A6CC6B5BE69937DF0364C0D2ABFF4227A6</NET_MAC>
+     <NET_STAMP>27570013</NET_STAMP>
+     <NET_RETURN>https://payment.checkout.fi/eZRQRnJ0Qr/fi/confirm</NET_RETURN>
+     <NET_ALG>03</NET_ALG>
+</poppankki>
+    
+
+
+
+    
+     
+    <aktia url="https://auth.aktia.fi/vm" icon="https://payment.checkout.fi/static/img/Aktiamaksunappi.png" name="Aktia">
+     <NET_VERSION>010</NET_VERSION>
+     <NET_SELLER_ID>0021966066000</NET_SELLER_ID>
+     <NET_CUR>EUR</NET_CUR>
+     <NET_REJECT>https://payment.checkout.fi/eZRQRnJ0Qr/fi/reject</NET_REJECT>
+     <NET_CONFIRM>YES</NET_CONFIRM>
+     <NET_CANCEL>https://payment.checkout.fi/eZRQRnJ0Qr/fi/back</NET_CANCEL>
+     <NET_DATE>EXPRESS</NET_DATE>
+     <NET_AMOUNT>14,90</NET_AMOUNT>
+     <NET_REF>280908838</NET_REF>
+     <NET_MSG>Testi Henkilö</NET_MSG>
+     <NET_MAC>416287F8DB3D820AFA9F85DC42A7ED1C20757B2B64A282B2EA13672A5F06784E</NET_MAC>
+     <NET_STAMP>27570013</NET_STAMP>
+     <NET_RETURN>https://payment.checkout.fi/eZRQRnJ0Qr/fi/confirm</NET_RETURN>
+     <NET_KEYVERS>0001</NET_KEYVERS>
+     <NET_ALG>03</NET_ALG>
+     
+</aktia>
+    
+
+
+
+
+
+
+    
+     
+
+    <sampo url="https://verkkopankki.danskebank.fi/SP/vemaha/VemahaApp" icon="https://payment.checkout.fi/static/img/danskebank.png" name="Danske Bank">
+     <SUMMA>14.90</SUMMA>
+     <VIITE>280908838</VIITE>
+     <KNRO>000000000000</KNRO>
+     <VALUUTTA>EUR</VALUUTTA>
+     <VERSIO>3</VERSIO>
+     <OKURL>https://payment.checkout.fi/eZRQRnJ0Qr/fi/confirm?ORDER=27570013&amp;ORDERMAC=D9C4F81AC31673D49B29B6B8D6674042</OKURL>
+     <VIRHEURL>https://payment.checkout.fi/eZRQRnJ0Qr/fi/back</VIRHEURL>
+     <TARKISTE>bbc1128bbc62fba51dd8bd45c6c44bd8629ec74089efe8f33079ddf6ef3983bd</TARKISTE>
+     <ERAPAIVA>28.08.2015</ERAPAIVA>
+     <ALG>03</ALG>
+     <lng>1</lng>
+    </sampo>
+
+    
+    
+     
+
+   <handelsbanken url="https://verkkomaksu.inetpankki.samlink.fi/vm/SHBlogin.html" icon="https://payment.checkout.fi/static/img/handelsbanken.gif" name="Handelsbanken">
+     <NET_VERSION>002</NET_VERSION>
+     <NET_SELLER_ID>0000000000</NET_SELLER_ID>
+     <NET_CUR>EUR</NET_CUR>
+     <NET_REJECT>https://payment.checkout.fi/eZRQRnJ0Qr/fi/reject</NET_REJECT>
+     <NET_CONFIRM>YES</NET_CONFIRM>
+     <NET_CANCEL>https://payment.checkout.fi/eZRQRnJ0Qr/fi/back</NET_CANCEL>
+     <NET_DATE>EXPRESS</NET_DATE>
+     <NET_AMOUNT>14,90</NET_AMOUNT>
+     <NET_REF>280908838</NET_REF>
+     <NET_MSG>Testi Henkilö</NET_MSG>
+     <NET_MAC>17B04F8BE24D30ECEA1D449863B8B42E</NET_MAC>
+     <NET_STAMP>27570013</NET_STAMP>
+     <NET_RETURN>https://payment.checkout.fi/eZRQRnJ0Qr/fi/confirm</NET_RETURN>
+</handelsbanken>
+
+    
+    
+     
+ 
+  <spankki url="https://online.s-pankki.fi/service/paybutton" icon="https://payment.checkout.fi/static/img/S_Pankki_Green_78.gif" name="S-Pankki">
+     <AAB_VERSION>0002</AAB_VERSION>
+     <AAB_STAMP>27570013</AAB_STAMP>
+     <AAB_RCV_ID>SPANKKIESHOPID</AAB_RCV_ID>
+     <AAB_RCV_ACCOUNT>393900-01002369</AAB_RCV_ACCOUNT>
+     <AAB_RCV_NAME>CHECKOUT FINLAND OY</AAB_RCV_NAME>
+     <AAB_LANGUAGE>1</AAB_LANGUAGE>
+     <AAB_AMOUNT>14,90</AAB_AMOUNT>
+     <AAB_REF>280908838</AAB_REF>
+     <AAB_DATE>EXPRESS</AAB_DATE>
+     <AAB_MSG>Testi Henkilö</AAB_MSG>
+     <AAB_RETURN>https://payment.checkout.fi/eZRQRnJ0Qr/fi/confirm</AAB_RETURN>
+     <AAB_CANCEL>https://payment.checkout.fi/eZRQRnJ0Qr/fi/back</AAB_CANCEL>
+     <AAB_REJECT>https://payment.checkout.fi/eZRQRnJ0Qr/fi/reject</AAB_REJECT>
+     <AAB_MAC>A686ED7CB6DE3ABC83D3FB6927AE1EC3</AAB_MAC>
+     <AAB_CONFIRM>YES</AAB_CONFIRM>
+     <AAB_KEYVERS>0001</AAB_KEYVERS>
+     <AAB_CUR>EUR</AAB_CUR>
+</spankki>
+
+    
+    
+     
+     <alandsbanken url="https://online.alandsbanken.fi/aab/ebank/auth/initLogin.do?BV_UseBVCookie=no" icon="https://payment.checkout.fi/static/img/alandsbanken.gif" name="Ålandsbanken">
+     <AAB_VERSION>0002</AAB_VERSION>
+     <AAB_STAMP>27570013</AAB_STAMP>
+     <AAB_RCV_ID>AABESHOPID</AAB_RCV_ID>
+     <AAB_RCV_ACCOUNT>660100-1130855</AAB_RCV_ACCOUNT>
+     <AAB_RCV_NAME>Checkout</AAB_RCV_NAME>
+     <AAB_LANGUAGE>1</AAB_LANGUAGE>
+     <AAB_AMOUNT>14,90</AAB_AMOUNT>
+     <AAB_REF>280908838</AAB_REF>
+     <AAB_DATE>EXPRESS</AAB_DATE>
+     <AAB_MSG>Testi Henkilö</AAB_MSG>
+     <AAB_RETURN>https://payment.checkout.fi/eZRQRnJ0Qr/fi/confirm</AAB_RETURN>
+     <AAB_CANCEL>https://payment.checkout.fi/eZRQRnJ0Qr/fi/back</AAB_CANCEL>
+     <AAB_REJECT>https://payment.checkout.fi/eZRQRnJ0Qr/fi/reject</AAB_REJECT>
+     <AAB_MAC>03332FD146D838BDAD3CF6B4602518E5</AAB_MAC>
+     <AAB_CONFIRM>YES</AAB_CONFIRM>
+     <AAB_KEYVERS>0001</AAB_KEYVERS>
+     <AAB_CUR>EUR</AAB_CUR>
+     <AAB_ALG/>
+     <BV_UseBVCookie>no</BV_UseBVCookie>
+</alandsbanken>
+    
+    
+    
+     
+  
+    <tapiola url="https://pankki.tapiola.fi/tap_bv/ebank/auth/initLogin.do" icon="https://payment.checkout.fi/static/img/lahitapiolapainike.gif" name="LähiTapiola Pankki">
+     <AAB_VERSION>0002</AAB_VERSION>
+     <AAB_STAMP>27570013</AAB_STAMP>
+     <AAB_RCV_ID>TAPESHOPID</AAB_RCV_ID>
+     <AAB_RCV_ACCOUNT>363630-01652643</AAB_RCV_ACCOUNT>
+     <AAB_RCV_NAME>Checkout</AAB_RCV_NAME>
+     <AAB_LANGUAGE>1</AAB_LANGUAGE>
+     <AAB_AMOUNT>14,90</AAB_AMOUNT>
+     <AAB_REF>280908838</AAB_REF>
+     <AAB_DATE>EXPRESS</AAB_DATE>
+     <AAB_MSG>Testi Henkilö</AAB_MSG>
+     <AAB_RETURN>https://payment.checkout.fi/eZRQRnJ0Qr/fi/confirm</AAB_RETURN>
+     <AAB_CANCEL>https://payment.checkout.fi/eZRQRnJ0Qr/fi/back</AAB_CANCEL>
+     <AAB_REJECT>https://payment.checkout.fi/eZRQRnJ0Qr/fi/reject</AAB_REJECT>
+     <AAB_MAC>AC497E6D91D0767327AE566549BF32B1</AAB_MAC>
+     <AAB_CONFIRM>YES</AAB_CONFIRM>
+     <AAB_KEYVERS>0001</AAB_KEYVERS>
+     <AAB_CUR>EUR</AAB_CUR>
+     <BV_UseBVCookie>NO</BV_UseBVCookie>
+</tapiola>
+    
+
+
+
+    
+
+    
+
+    
+
+
+    
+ 
+    
+   
+
+    
+
+
+
+    
+     
+    <neopay url="https://www.neocard.fi/neopay11/" icon="https://payment.checkout.fi/static/img/logo_neo_maksuominaisuus.gif" name="Neocard">
+     <terminal_identifier>999</terminal_identifier>
+     <business_code>1234567-4</business_code>
+     <timestamp>20150828100348</timestamp>
+     <amount_to_debit>1490</amount_to_debit>
+     <order_info>Testi Henkilö</order_info>
+     <success_url>https://payment.checkout.fi/eZRQRnJ0Qr/fi/confirm?p=28090883&amp;t=27570013&amp;amount=1490</success_url>
+     <failure_url>https://payment.checkout.fi/eZRQRnJ0Qr/fi/back</failure_url>
+     <cancel_url>https://payment.checkout.fi/eZRQRnJ0Qr/fi/reject</cancel_url>
+     <checksum>d17f61c0db7717aeb1653a1f6a9a2c10</checksum>
+    </neopay>
+    
+    
+    
+    
+ 
+    
+     
+     <tilisiirto url="https://payment.checkout.fi/eZRQRnJ0Qr/fi/tilisiirto" icon="https://payment.checkout.fi/static/img/tilisiirto.gif" name="Tilisiirto">
+       <bank>Nordea</bank>
+       <iban>FI66 1732 3000 0094 95</iban>
+       <bic>NDEAFIHH</bic>
+       <reference>280908838</reference>
+       <amount>1490</amount>
+       <receiver>Checkout Finland Oy</receiver>
+     </tilisiirto>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+
+   </banks>
+
+   
+  </payment>
+  
+ </payments>
+</trade>

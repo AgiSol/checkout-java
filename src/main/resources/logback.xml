@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration scan="true">
+    
+	<property name="LOGFILES" value="./logs" />
+	
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <charset>utf-8</charset>
+            <Pattern>%d %-5level [%thread] [%file:%line]: %msg%n</Pattern>
+        </encoder>
+    </appender>
+    
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    	<file>${LOGFILES}/logFile.log</file>
+        
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOGFILES}/archived/logFile.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <maxHistory>90</maxHistory>
+            
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<maxFileSize>10MB</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+			
+        </rollingPolicy>
+        
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <charset>utf-8</charset>
+            <Pattern>%d %-5level [%thread] %logger{0}: %msg%n</Pattern>
+        </encoder>
+    </appender>
+	
+    <logger name="fi.agisol.checkout" level="${logback.loglevel}"/>
+
+    <contextListener class="ch.qos.logback.classic.jul.LevelChangePropagator">
+        <resetJUL>true</resetJUL>
+    </contextListener>
+
+    <root level="${logback.loglevel}">
+        <appender-ref ref="CONSOLE"/>
+<!--         <appender-ref ref="FILE"/> -->
+    </root>
+	
+	
+</configuration>
