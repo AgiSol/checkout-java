@@ -47,9 +47,9 @@ public class TestTransactionEntity implements TransactionEntity {
     
 
     
-    protected TestTransactionEntity() {}
+    public TestTransactionEntity() {}
 
-    protected TestTransactionEntity(String stamp, String paymentId, String reference, Integer amount, String message) {
+    public TestTransactionEntity(String stamp, String paymentId, String reference, Integer amount, String message) {
 		this.stamp = stamp;
 		this.paymentId = paymentId;
 		this.reference = reference;
